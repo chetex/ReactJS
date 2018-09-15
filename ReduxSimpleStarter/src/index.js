@@ -1,6 +1,11 @@
+// **********************
+//  Import
+// **********************
 // Extract react from "node modules" and add to React var
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import SearchBar from './components/search_bar'
 
 // This key allow us call youtube api
 const API_KEY = 'AIzaSyC3Q5YmxCqGB7BGC8ovydEN-T69Dknob5s';
@@ -8,7 +13,9 @@ const API_KEY = 'AIzaSyC3Q5YmxCqGB7BGC8ovydEN-T69Dknob5s';
 // Create a new component
 // and this component produce some HMTL
 const App = () => {
-    return <div>Hola</div>; 
+    return <div>
+        <SearchBar />
+    </div>; 
 }
 
 // Take this component generated HTML and put it 
