@@ -1,10 +1,14 @@
 // it similar to const Component = React.Component
 import React, { Component } from 'react';
 
-
 class SearchBar extends Component {
     render() {
-        return <input />;
+        return <input onChange={this.onInputChange}/>;
+    }
+
+    /** Event on input textbox */
+    onInputChange(event) {
+        console.log(event);
     }
 }
 
